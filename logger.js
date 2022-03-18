@@ -88,4 +88,21 @@ $(document).ready(function () {
             }
         }, 1000);
     }
+    if(url.includes("https://onlineclass.iiitkottayam.ac.in/html5client/join?sessionToken=")){
+       var btnMicro=document.querySelector('.icon-bbb-unmute');
+       var btnListen=document.querySelector('.icon-bbb-listen');
+    var timeSet=setInterval(function()
+                            {
+        if(btnMicro)
+                            {
+        btnMicro.click();
+        btnListen.click();
+        clearInterval(timeSet);
+    }
+    else{
+        continue;
+    }
+                                      },1000);                                  
+                                       
+}
 })
