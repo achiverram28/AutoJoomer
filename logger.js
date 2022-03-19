@@ -99,9 +99,7 @@ $(document).ready(function () {
         btnListen.click();
         clearInterval(timeSet);
     }
-    else{
-        continue;
-    }
+   
                                       },1000);                                  
                                        
 }
